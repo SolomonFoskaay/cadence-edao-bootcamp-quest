@@ -20,3 +20,13 @@ A Transaction involves making changes and storing information into the Blockchai
 =====================================
 CHAPTER 1
 DAY 2
+What are the 5 Cadence Programming Language Pillars?
+Answer: Cadence pillars are
+1. Security - ensuring smart contract are secure by design
+2. clarity - easy to read even for non-coder
+3. Approachability - seemilar to existing programming languages to make it easier to learn if have experience with any programming language
+4. Debug: Easy to debug error
+5. Resource Oriented Programming Language
+
+In your opinion, even without knowing anything about the Blockchain or coding, why could the 5 Pillars be useful (you don't have to answer this for #5)?
+So, 
