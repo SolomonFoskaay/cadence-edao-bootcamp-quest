@@ -1,8 +1,9 @@
 0x08b9666a84ee742e
 
-ANSWERS TO QUESTS
+#ANSWERS TO QUESTS
 =====================================
-CHAPTER 1
+##CHAPTER 1
+
 DAY 1
 You are free to answer these questions in your own language of choice. And no, I don't mean computer programming language, haha.
 
