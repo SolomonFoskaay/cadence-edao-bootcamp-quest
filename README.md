@@ -35,7 +35,7 @@ Cadence pillars are
 4. Debug: Easy to debug error
 5. Resource Oriented Programming Language
 
-#### QUESTION 1: 
+#### QUESTION 2: 
 In your opinion, even without knowing anything about the Blockchain or coding, why could the 5 Pillars be useful (you don't have to answer this for #5)?
 #### ANSWER: 
 The 5 pillars could be very useful to make Flow Blockchain attractive to developers and enhance them to build scalable dApps due to cheap deployment fees.
