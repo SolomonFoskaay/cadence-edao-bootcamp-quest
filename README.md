@@ -54,7 +54,7 @@ Deploy a contract to account 0x03 called "JacobTucker". Inside that contract, de
 <img src="https://drive.google.com/uc?export=view&id=1OA_-AqMoweE1xP5KmN2xhdY9iDepTIXy" width="75%" height="75%">
 
 #### QUESTION 2: 
-Explain what a Smart Contract is. You can read this to help you, but you don't have to: https://www.ibm.com/topics/smart-contracts
+Check that your variable is actually equals "the best" by executing a script to read that variable. Include a screenshot of the output.
 #### ANSWER: 
 <img src="https://drive.google.com/uc?export=view&id=1OE3pmop1I39LzQVTDMT5QFiuVsjis6Cx" width="75%" height="75%">
 
