@@ -51,9 +51,12 @@ For todays quest, please load up a new Flow playground by going to https://play.
 #### QUESTION 1: 
 Deploy a contract to account 0x03 called "JacobTucker". Inside that contract, declare a constant variable named is, and make it have type String. Initialize it to "the best" when your contract gets deployed
 #### ANSWER: 
-<img src="https://drive.google.com/uc?export=view&id=1OA_-AqMoweE1xP5KmN2xhdY9iDepTIXy" width="50%" height="50%">
+<img src="https://drive.google.com/uc?export=view&id=1OA_-AqMoweE1xP5KmN2xhdY9iDepTIXy" width="75%" height="75%">
 
 #### QUESTION 2: 
 Explain what a Smart Contract is. You can read this to help you, but you don't have to: https://www.ibm.com/topics/smart-contracts
 #### ANSWER: 
-Smart Contract is a piece of code that run in a Blockchain
+<img src="https://drive.google.com/uc?export=view&id=1OE3pmop1I39LzQVTDMT5QFiuVsjis6Cx" width="75%" height="75%">
+
+
+
