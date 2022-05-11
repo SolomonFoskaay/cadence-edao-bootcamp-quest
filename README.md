@@ -41,7 +41,7 @@ In your opinion, even without knowing anything about the Blockchain or coding, w
 The 5 pillars could be very useful to make Flow Blockchain attractive to developers and enhance them to build scalable dApps due to cheap deployment fees.
 Low subsequent transaction fees for developers and their users to interact with the smart contract after deployment will aid mass adoption of the Blockchain and web3 as a whole
 
-==============
+====================================================
 
 ## CHAPTER 2
 
@@ -51,7 +51,7 @@ For todays quest, please load up a new Flow playground by going to https://play.
 #### QUESTION 1: 
 Deploy a contract to account 0x03 called "JacobTucker". Inside that contract, declare a constant variable named is, and make it have type String. Initialize it to "the best" when your contract gets deployed
 #### ANSWER: 
-<img src="https://drive.google.com/file/d/1OA_-AqMoweE1xP5KmN2xhdY9iDepTIXy/view?usp=sharing" width="50%" height="50%">
+<img src="https://drive.google.com/uc?export=view&id=1OA_-AqMoweE1xP5KmN2xhdY9iDepTIXy" width="50%" height="50%">
 
 #### QUESTION 2: 
 Explain what a Smart Contract is. You can read this to help you, but you don't have to: https://www.ibm.com/topics/smart-contracts
