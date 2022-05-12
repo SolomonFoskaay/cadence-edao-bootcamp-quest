@@ -60,7 +60,7 @@ Deploy a contract to account 0x03 called "JacobTucker". Inside that contract, de
 #### QUESTION 2: 
 Check that your variable is actually equals "the best" by executing a script to read that variable. Include a screenshot of the output.
 #### ANSWER: 
-<img src="https://drive.google.com/uc?export=view&id=1OE3pmop1I39LzQVTDMT5QFiuVsjis6Cx" width="75%" height="75%">
+<img src="screenshots/EmeraldDAO-Cadence-Chapter2-Day1-Quests-02-Script.png" width="75%" height="75%">
 
 
 -------------------------------------------------
@@ -94,16 +94,16 @@ Add a transaction that takes in a parameter named myNewNumber and passes it into
 #### ANSWER: 
 (4a) A variable named myNumber that has type Int (set it to 0 when the contract is deployed)
 (4b) function named updateMyNumber that takes in a new number named newNumber as a parameter that has type Int and updates myNumber to be newNumber
-<img src="https://drive.google.com/uc?export=view&id=1gGDEizMa875YGV3wD34qk7N2vTX08Wqm" width="75%" height="75%">
+<img src="screenshots/EmeraldDAO-Cadence-Chapter2-Day2-Quests-4a-Smart-Contract.png" width="75%" height="75%">
 
 (4c) Add a script that reads myNumber from the contract
-<img src="https://drive.google.com/uc?export=view&id=1gGyI9V0kXO1wR1lRE_NwBHqbgDeG8aO3" width="75%" height="75%">
+<img src="screenshots/EmeraldDAO-Cadence-Chapter2-Day2-Quests-4b-Script.png" width="75%" height="75%">
 
 (4d) Add a transaction that takes in a parameter named myNewNumber and passes it into the updateMyNumber function. Verify that your number changed by running the script again.
-<img src="https://drive.google.com/uc?export=view&id=1gHatHXW96AVhXJk3w-PEgaWD-rrsSeJr" width="75%" height="75%">
+<img src="screenshots/EmeraldDAO-Cadence-Chapter2-Day2-Quests-4c1-transaction.png" width="75%" height="75%">
 
 Final result of script rerun after transaction execution to update "myNumber" variable value from "0" to "1234567890" in the smart contract
-<img src="https://drive.google.com/uc?export=view&id=1gNQQLOUsUNC-unxHBS5z5HxMD1Yv7uSs" width="75%" height="75%">
+<img src="screenshots/EmeraldDAO-Cadence-Chapter2-Day2-Quests-4c2-script.png" width="75%" height="75%">
 
 
 
