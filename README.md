@@ -102,7 +102,7 @@ Add a transaction that takes in a parameter named myNewNumber and passes it into
 (4d) Add a transaction that takes in a parameter named myNewNumber and passes it into the updateMyNumber function. Verify that your number changed by running the script again.
 <img src="https://drive.google.com/uc?export=view&id=1gHatHXW96AVhXJk3w-PEgaWD-rrsSeJr" width="75%" height="75%">
 
-Final result of script rerun after transaction execution to update the smartcontract number from "0" to "123456789"
+Final result of script rerun after transaction execution to update "myNumber" variable value from "0" to "1234567890" in the smart contract
 <img src="https://drive.google.com/uc?export=view&id=1gNQQLOUsUNC-unxHBS5z5HxMD1Yv7uSs" width="75%" height="75%">
 
 
