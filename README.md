@@ -127,7 +127,8 @@ Explain what the force unwrap operator ! does, with an example different from th
 #### ANSWER: 
 Force unwrap "!" is an operator used to unwrap variable value to display the content. But, if the value is "nil", then it helps to terminate the program instantly. If it finds valid variable value, then it removes the optional type to give out a valid variable value type (especially useful in Dictionary where the value are always "optional" because it can either hold a value like 1, "one" or nil).
 
-Example:
+EXAMPLE:
+
 <img src="screenshots/EmeraldDAO-Cadence-Chapter2-Day3-Quests-3-ForceUnwrapScript.png" width="75%" height="75%">
 
 #### QUESTION 4: 
@@ -149,12 +150,14 @@ We are getting this because Dictionary can output not just the value type like "
 
 (4c) How to fix it
 #### ANSWER:
-To fix it we need to add unwrapped oprator "!" to the end of the return value to ensure it forces out real value type if existing and remove the nil for the program to avoid going into panic mode and terminating. See fix below:
+To fix it we need to add unwrapped operator "!" to the end of the return value to ensure it forces out real value type if existing and remove the nil for the program to avoid going into panic mode and terminating. See fix below:
 
 BEFORE FIX APPLIED
+
 <img src="screenshots/EmeraldDAO-Cadence-Chapter2-Day3-Quests-4c1-MismatchErrorFixScript.png" width="75%" height="75%">
 
 AFTER FIX APPLIED
+
 <img src="screenshots/EmeraldDAO-Cadence-Chapter2-Day3-Quests-4c2-MismatchErrorFixScript.png" width="75%" height="75%">
 
 
