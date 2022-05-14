@@ -134,10 +134,11 @@ Why we're getting this error
 How to fix it
 <img src="https://github.com/SolomonFoskaay/beginner-cadence-course/raw/main/chapter2.0/images/wrongcode.png" width="75%" height="75%">
 
-#### ANSWER: 
+#### ANSWERS BELOW: 
 
 (4a) What the error message means
 #### ANSWER:
+<img src="screenshots/EmeraldDAO-Cadence-Chapter2-Day3-Quests-1-ArrayScript.png" width="75%" height="75%">
 
 (4b) Why we're getting this error
 #### ANSWER:
