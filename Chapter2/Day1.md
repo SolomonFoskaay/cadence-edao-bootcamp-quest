@@ -6,7 +6,7 @@ For todays quest, please load up a new Flow playground by going to https://play.
 #### QUESTION 1: 
 Deploy a contract to account 0x03 called "JacobTucker". Inside that contract, declare a constant variable named is, and make it have type String. Initialize it to "the best" when your contract gets deployed
 #### ANSWER: 
-<img src="Chapter2/Screenshots/EmeraldDAO-Cadence-Chapter2-Day1-Quests-01-Smart-Contract.png" width="75%" height="75%">
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/Chapter2/Screenshots/EmeraldDAO-Cadence-Chapter2-Day1-Quests-01-Smart-Contract.png" width="75%" height="75%">
 
 #### QUESTION 2: 
 Check that your variable is actually equals "the best" by executing a script to read that variable. Include a screenshot of the output.
