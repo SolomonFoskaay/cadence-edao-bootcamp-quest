@@ -128,7 +128,7 @@ Explain what the force unwrap operator ! does, with an example different from th
 Force unwrap "!" is an operator used to unwrap variable value to display the content. But, if the value is "nil", then it helps to terminate the program instantly. If it finds valid variable value, then it removes the optional type to give out a valid variable value type (especially useful in Dictionary where the value are always "optional" because it can either hold a value like 1, "one" or nil).
 
 Example:
-
+<img src="screenshots/EmeraldDAO-Cadence-Chapter2-Day3-Quests-3-ForceUnwrapScript.png" width="75%" height="75%">
 
 #### QUESTION 4: 
 Using this picture below, explain...
