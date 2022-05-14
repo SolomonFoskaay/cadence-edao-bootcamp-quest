@@ -115,7 +115,7 @@ Please answer in the language of your choice.
 #### QUESTION 1: 
 In a script, initialize an array (that has length == 3) of your favourite people, represented as Strings, and log it.
 #### ANSWER: 
-
+<img src="screenshots/EmeraldDAO-Cadence-Chapter2-Day3-Quests-1-ArrayScript.png" width="75%" height="75%">
 
 #### QUESTION 2: 
 In a script, initialize a dictionary that maps the Strings Facebook, Instagram, Twitter, YouTube, Reddit, and LinkedIn to a UInt64 that represents the order in which you use them from most to least. For example, YouTube --> 1, Reddit --> 2, etc. If you've never used one before, map it to 0!
@@ -138,7 +138,7 @@ How to fix it
 
 (4a) What the error message means
 #### ANSWER:
-<img src="screenshots/EmeraldDAO-Cadence-Chapter2-Day3-Quests-1-ArrayScript.png" width="75%" height="75%">
+
 
 (4b) Why we're getting this error
 #### ANSWER:
