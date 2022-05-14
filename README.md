@@ -107,5 +107,43 @@ Final result of script rerun after transaction execution to update "myNumber" va
 
 
 
+-------------------------------------------------
+
+### DAY 3
+Please answer in the language of your choice.
+
+#### QUESTION 1: 
+In a script, initialize an array (that has length == 3) of your favourite people, represented as Strings, and log it.
+#### ANSWER: 
+
+
+#### QUESTION 2: 
+In a script, initialize a dictionary that maps the Strings Facebook, Instagram, Twitter, YouTube, Reddit, and LinkedIn to a UInt64 that represents the order in which you use them from most to least. For example, YouTube --> 1, Reddit --> 2, etc. If you've never used one before, map it to 0!
+#### ANSWER: 
+
+
+#### QUESTION 3: 
+Explain what the force unwrap operator ! does, with an example different from the one I showed you (you can just change the type).
+#### ANSWER: 
+
+
+#### QUESTION 4: 
+Using this picture below, explain...
+What the error message means
+Why we're getting this error
+How to fix it
+<img src="https://github.com/SolomonFoskaay/beginner-cadence-course/raw/main/chapter2.0/images/wrongcode.png" width="75%" height="75%">
+
+#### ANSWER: 
+
+(4a) What the error message means
+#### ANSWER:
+
+(4b) Why we're getting this error
+#### ANSWER:
+
+
+(4c) How to fix it
+#### ANSWER:
 
 
