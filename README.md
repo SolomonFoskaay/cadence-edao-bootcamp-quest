@@ -132,22 +132,30 @@ Example:
 
 #### QUESTION 4: 
 Using this picture below, explain...
-What the error message means
-Why we're getting this error
-How to fix it
+What the error message means?
+Why we're getting this error?
+How to fix it?
 <img src="https://github.com/SolomonFoskaay/beginner-cadence-course/raw/main/chapter2.0/images/wrongcode.png" width="75%" height="75%">
 
 #### ANSWERS BELOW: 
 
 (4a) What the error message means
 #### ANSWER:
-
+The error message "mismatched types. expected `String`, got `String?`" means the value from the Dictionary is "optional type" instead of just "String" expected as the return value based on String been specified at the function head as what is expected from the return statement.
 
 (4b) Why we're getting this error
 #### ANSWER:
-
+We are getting this because Dictionary can output not just the value type like "Int", "Address" and "String", it can also output "Optional Type" which allows the output to also be "nil". Once our program got "nil" as value, it panics and terminate the program, leading to the "mismatched types. expected `String`, got `String?`" error shown.
 
 (4c) How to fix it
 #### ANSWER:
+To fix it we need to add unwrapped oprator "!" to the end of the return value to ensure it forces out real value type if existing and remove the nil for the program to avoid going into panic mode and terminating. See fix below:
+
+BEFORE FIX APPLIED
+<img src="screenshots/EmeraldDAO-Cadence-Chapter2-Day3-Quests-4c1-MismatchErrorFixScript.png" width="75%" height="75%">
+
+AFTER FIX APPLIED
+<img src="screenshots/EmeraldDAO-Cadence-Chapter2-Day3-Quests-4c2-MismatchErrorFixScript.png" width="75%" height="75%">
+
 
 
