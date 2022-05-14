@@ -119,12 +119,15 @@ In a script, initialize an array (that has length == 3) of your favourite people
 
 #### QUESTION 2: 
 In a script, initialize a dictionary that maps the Strings Facebook, Instagram, Twitter, YouTube, Reddit, and LinkedIn to a UInt64 that represents the order in which you use them from most to least. For example, YouTube --> 1, Reddit --> 2, etc. If you've never used one before, map it to 0!
-#### ANSWER: 
-
+#### ANSWER:
+<img src="screenshots/EmeraldDAO-Cadence-Chapter2-Day3-Quests-2-DictionaryMappingScript.png" width="75%" height="75%">
 
 #### QUESTION 3: 
 Explain what the force unwrap operator ! does, with an example different from the one I showed you (you can just change the type).
 #### ANSWER: 
+Force unwrap "!" is an operator used to unwrap variable value to display the content. But, if the value is "nil", then it helps to terminate the program instantly. If it finds valid variable value, then it removes the optional type to give out a valid variable value type (especially useful in Dictionary where the value are always "optional" because it can either hold a value like 1, "one" or nil).
+
+Example:
 
 
 #### QUESTION 4: 
