@@ -38,7 +38,13 @@ No, if the contract has now public function to create one, then resources can't 
   
 #### QUESTION 5: 
 What is the type of the resource below?
+```cadence
+pub resource Jacob {
+
+}
+```
 #### ANSWER:
+
 
 <hr>
 
