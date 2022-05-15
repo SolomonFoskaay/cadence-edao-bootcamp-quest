@@ -44,7 +44,7 @@ pub resource Jacob {
 }
 ```
 #### ANSWER:
-Sorry, seems confusing considering only the resources name "Jacob" was stated above, can't state what type of resources it is. But, a look at the full code in N06 below. I can say its a Boolean resource type.
+Sorry, seems confusing considering only the resources name "Jacob" was stated above, can't state what type of resources it is. But, a look at the full code in No6 Quest below. I can say its a Boolean resource type.
 
 <hr>
 
