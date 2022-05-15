@@ -69,4 +69,4 @@ pub contract Test {
 }
 ```
 #### ANSWER:
-<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter2-Day4-Quests-5-Script.png" width="75%" height="75%">
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day1-Quests-5-FixResourcesErrorsContract.png" width="75%" height="75%">
