@@ -12,7 +12,7 @@ Three(3) reasons why structs are different from resources are:
   <il>Struct is copiable from one variable to another WHY Resources can not be copied</il>
   <il>Struct is assigned to variable with "=" operator WHY Resources can not and only be done with "<-" move operator" </il>
 </ol>
-
+<hr>
   
 #### QUESTION 2: 
 Describe a situation where a resource might be better to use than a struct.
