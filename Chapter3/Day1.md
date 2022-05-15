@@ -12,7 +12,8 @@ Three(3) reasons why structs are different from resources are:
   <il>Struct is copiable from one variable to another WHY Resources can not be copied</il>
   <il>Struct is assigned to variable with "=" operator WHY Resources can not and only be done with "<-" move operator" </il>
 </ol>
-<hr>
+
+ <hr>
   
 #### QUESTION 2: 
 Describe a situation where a resource might be better to use than a struct.
@@ -21,23 +22,27 @@ One of the most obvious situation where a resource might be better to use than a
 It helps preserve the uniqueness and prevent costly mistake of overiding an NFT that may worth millions of dollars 
 (guuuuhhhh beter not do such mistake on mainnet lol)
 
+<hr>
   
 #### QUESTION 3: 
 What is the keyword to make a new resource?
 #### ANSWER: 
 The keyword to make a new resources is "create"
 
+<hr>
   
 #### QUESTION 4: 
 Can a resource be created in a script or transaction (assuming there isn't a public function to create one)?
 #### ANSWER:
 No, if the contract has now public function to create one, then resources can't just be created at will like struct in Transaction or Script.
 
+<hr>
   
 #### QUESTION 5: 
 What is the type of the resource below?
 #### ANSWER:
 
+<hr>
 
   
 #### QUESTION 6: 
