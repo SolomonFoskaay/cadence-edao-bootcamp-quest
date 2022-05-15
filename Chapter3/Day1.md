@@ -7,11 +7,9 @@
 In words, list 3 reasons why structs are different from resources.
 #### ANSWER: 
 Three(3) reasons why structs are different from resources are:
-<ol>
-  <il>Struct is a data container WHY Resources is a more secured data container</il>
-  <il>Struct is copiable from one variable to another WHY Resources can not be copied</il>
-  <il>Struct is assigned to variable with "=" operator WHY Resources can not and only be done with "<-" move operator" </il>
-</ol>
+1. Struct is a data container WHY Resources is a more secured data container.
+2. Struct is copiable from one variable to another WHY Resources can not be copied.
+3. Struct is assigned to variable with "=" operator WHY Resources can not and only be done with "<-" move operator.
 
  <hr>
   
