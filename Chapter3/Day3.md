@@ -64,7 +64,7 @@ pub fun main(): String {
 #### QUESTION 3: 
 Explain, in your own words, why references can be useful in Cadence.
 #### ANSWER: 
-Reference can be useful in Cadence because it allows to easily access and interact with data like resource without moving the actual data around. Just like having an ATM card linked to cash in your bank account, you can move around and spend/withdraw your cash anytime without the risk of carrying the actual cash in your bag/wallet all around (thats too risky -lol)
+Reference can be useful in Cadence because it allows to easily access and interact with data like resource without moving the actual data around. Just like having an ATM card linked to huge amount of money in your bank account, you can easily move around and spend/withdraw your money anytime without the risk of carrying the actual huge amount of money as cash in your bag/wallet all around (thats too risky -lol)
 
   
 
