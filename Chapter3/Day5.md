@@ -6,6 +6,7 @@
 #### QUESTION 1: 
 For today's quest, you will be looking at a contract and a script. You will be looking at 4 variables (a, b, c, d) and 3 functions (publicFunc, contractFunc, privateFunc) defined in SomeContract. In each AREA (1, 2, 3, and 4), I want you to do the following: for each variable (a, b, c, and d), tell me in which areas they can be read (read scope) and which areas they can be modified (write scope). For each function (publicFunc, contractFunc, and privateFunc), simply tell me where they can be called.
 #### ANSWER (CONTRACT - AREA 1 to 3): 
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day5-Quests-1a-AccessControl.png" width="75%" height="75%">
 
 ```cadence
  access(all) contract SomeContract {
@@ -138,6 +139,7 @@ For today's quest, you will be looking at a contract and a script. You will be l
 
 
 #### ANSWER (SCRIPT -  AREA 4):
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day5-Quests-1a-AccessControl.png" width="75%" height="75%">
 
 ```cadence
  
