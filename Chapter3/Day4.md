@@ -15,8 +15,81 @@ The 2 things interfaces can be used for are:
 #### QUESTION 2: 
 Define your own contract. Make your own resource interface and a resource that implements the interface. Create 2 functions. In the 1st function, show an example of not restricting the type of the resource and accessing its content. In the 2nd function, show an example of restricting the type of the resource and NOT being able to access its content.
 #### ANSWER:
-<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day3-Quests-2-ScriptForReferenceDictionaryOfResource.png" width="75%" height="75%">
+1. 1st function, show an example of not restricting the type of the resource and accessing its content
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day4-Quests-2a-NotRestrictedInterfaceResourceContent.png" width="75%" height="75%">
+```cadence
+pub contract PetCenter {
 
+    //SolomonFoskaayQuestsSubmission
+
+    //interface of resource type @Pet
+    pub resource interface IPet {
+      pub let petType: String
+      
+    }
+
+    //resource type @Pet
+    pub resource Pet: IPet {
+        pub let petType: String
+        pub let petName: String
+
+        init() {
+            self.petType = "Dog"
+            self.petName = "Puppy"
+        }
+    }
+
+    //1st function, show an example of not restricting the type of the resource and accessing its content
+    pub fun notRestricted() {
+      let noRestricted: @Pet <- create Pet()
+      log(noRestricted.petName)
+      destroy noRestricted
+    }
+
+    //initialize variables
+    init() {
+    }
+
+}    
+```
+
+2. 2nd function, show an example of restricting the type of the resource and NOT being able to access its content.
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day3-Quests-2-ScriptForReferenceDictionaryOfResource.png" width="75%" height="75%">
+```cadence
+pub contract PetCenter {
+
+    //SolomonFoskaayQuestsSubmission
+
+    //interface of resource type @Pet
+    pub resource interface IPet {
+      pub let petType: String
+      
+    }
+
+    //resource type @Pet
+    pub resource Pet: IPet {
+        pub let petType: String
+        pub let petName: String
+
+        init() {
+            self.petType = "Dog"
+            self.petName = "Puppy"
+        }
+    }
+
+    //1st function, show an example of not restricting the type of the resource and accessing its content
+    pub fun notRestricted() {
+      let noRestricted: @Pet <- create Pet()
+      log(noRestricted.petName)
+      destroy noRestricted
+    }
+
+    //initialize variables
+    init() {
+    }
+
+}    
+```
 
 
 <hr>
