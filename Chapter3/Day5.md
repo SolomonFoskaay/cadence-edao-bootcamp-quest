@@ -139,10 +139,36 @@ For today's quest, you will be looking at a contract and a script. You will be l
 
 
 #### ANSWER (SCRIPT -  AREA 4):
-<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day5-Quests-1a-AccessControl.png" width="75%" height="75%">
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day5-Quests-1b-AccessControlScript.png" width="75%" height="75%">
 
 ```cadence
- 
+ import SomeContract from 0x05
+
+pub fun main() {
+  /**************/
+  /*** AREA 4 ***/
+  /**************/
+//SolomonFoskaayQuestsSubmission
+    //READ
+        log (SomeContract.testStruct.a)
+    //WRITE
+       SomeContract.testStruct.a = "ten"
+    //Call
+        SomeContract.testStruct.publicFunc()
+        //SomeContract.testStruct.contractFunc()
+        //SomeContract.testStruct.privateFunc()
+
+  // 4 Variables
+  //a - Read Here (YES) || Write Here (YES)
+  //b - Read Here (YES) || Write Here (NO)
+  //c - Read Here (NO)  || Write Here (NO)
+  //d - Read Here (NO)  || Write Here (NO)
+
+  // 3 Functions
+  //publicFunc()    - Callable Here (YES)
+  //contractFunc()  - Callable Here (NO)
+  //privateFunc()   - Callable Here (NO)
+}
 ```
   
 
