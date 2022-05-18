@@ -6,7 +6,9 @@
 #### QUESTION 1: 
 Explain, in your own words, the 2 things resource interfaces can be used for (we went over both in today's content)
 #### ANSWER: 
-
+The 2 things interfaces can be used for are:
+1. Restricting access to some contents of a resource/struct
+2. Specifies the requirement that must be included in the resource that implement the interface
 
  <hr>
   
