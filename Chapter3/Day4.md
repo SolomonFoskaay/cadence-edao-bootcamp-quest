@@ -140,13 +140,50 @@ pub contract Stuff {
 }
 ```
 #### ANSWER: 
+1. Before above code fixed - the following errors shown:
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day4-Quests-3a-FixCodeErrors.png" width="75%" height="75%">
+
+2. AFTER Error1 Fixed:
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day4-Quests-3b-FixCodeErrors.png" width="75%" height="75%">
+
+
+3. AFTER Error2 Fixed:
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day4-Quests-3c-FixCodeErrors.png" width="75%" height="75%">
+
 ```cadence
-import Test from 0x03
+pub contract Stuff {
 
-pub fun main(): String {
-    let ref = Test.getRef(key: "Puppy")
-    return ref.petType
+    //SolomonFoskaayQuestsSubmission
 
+    pub struct interface ITest {
+      pub var greeting: String
+      pub var favouriteFruit: String
+      pub fun changeGreeting(newGreeting: String): String //FIXED 2: include changeGreeting function head in the interface
+    }
+
+    // ERROR:
+    // `structure Stuff.Test does not conform 
+    // to structure interface Stuff.ITest`
+    pub struct Test: ITest {
+      pub var greeting: String
+      pub var favouriteFruit: String //FIXED 1A: add favouriteFruit here
+
+      pub fun changeGreeting(newGreeting: String): String {
+        self.greeting = newGreeting
+        return self.greeting // returns the new greeting
+      }
+
+      init() {
+        self.greeting = "Hello!"
+        self.favouriteFruit = "Egg Plant" //FIXED 1B: initialize favourite fruit here
+      }
+    }
+
+    pub fun fixThis() {
+      let test: Test{ITest} = Test()
+      let newGreeting = test.changeGreeting(newGreeting: "Bonjour!") // ERROR HERE: `member of restricted type is not accessible: changeGreeting`
+      log(newGreeting)
+    }
 }
 ```
   
