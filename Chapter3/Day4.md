@@ -17,6 +17,7 @@ Define your own contract. Make your own resource interface and a resource that i
 #### ANSWER:
 1. 1st function, show an example of not restricting the type of the resource and accessing its content
 <img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day4-Quests-2a-NotRestrictedInterfaceResourceContent.png" width="75%" height="75%">
+
 ```cadence
 pub contract PetCenter {
 
@@ -55,6 +56,7 @@ pub contract PetCenter {
 
 2. 2nd function, show an example of restricting the type of the resource and NOT being able to access its content.
 <img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day3-Quests-2-ScriptForReferenceDictionaryOfResource.png" width="75%" height="75%">
+
 ```cadence
 pub contract PetCenter {
 
