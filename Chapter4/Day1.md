@@ -15,7 +15,9 @@ What is the difference between the /storage/, /public/, and /private/ paths?
 #### ANSWER:
 The difference between the /storage/, /public/, and /private/ paths are:
  i. /storage/: stores data and only accessible to the account owner
+ 
  ii. /public/: data store in this path is accessible to everyone
+ 
  iii. /private/: data store in private path is accessible only to the account owner and any other people the account owner give the access to.
 
 
@@ -25,7 +27,9 @@ The difference between the /storage/, /public/, and /private/ paths are:
 What does .save() do? What does .load() do? What does .borrow() do?
 #### ANSWER: 
 i. .save() helps to save data inside the account "Storage"
+
 ii. .load() helps to take out the stored data
+
 iii. .borrow() help to give access to the stored data in storage without actually moving the data itself through the user of reference
 
 
