@@ -6,14 +6,17 @@
 #### QUESTION 1: 
 Explain what lives inside of an account.
 #### ANSWER: 
-
+Account owner's data lives inside of an account which can be in form of things like Smart contract code stored in Storage and can either acessible via Public path (for everyone) or Private path (for those allowed by the account owner)
 
  <hr>
   
 #### QUESTION 2: 
 What is the difference between the /storage/, /public/, and /private/ paths?
 #### ANSWER:
-
+The difference between the /storage/, /public/, and /private/ paths are:
+ i. /storage/: stores data and only accessible to the account owner
+ ii. /public/: data store in this path is accessible to everyone
+ iii. /private/: data store in private path is accessible only to the account owner and any other people the account owner give the access to.
 
 
 <hr>
@@ -21,7 +24,9 @@ What is the difference between the /storage/, /public/, and /private/ paths?
 #### QUESTION 3: 
 What does .save() do? What does .load() do? What does .borrow() do?
 #### ANSWER: 
-
+i. .save() helps to save data inside the account "Storage"
+ii. .load() helps to take out the stored data
+iii. .borrow() help to give access to the stored data in storage without actually moving the data itself through the user of reference
 
 
 <hr>
@@ -29,14 +34,14 @@ What does .save() do? What does .load() do? What does .borrow() do?
 #### QUESTION 4: 
 Explain why we couldn't save something to our account storage inside of a script.
 #### ANSWER: 
-
+We couldn't save something to our account storage inside of a script because script is only to read what is already stored on Blockchain and not to add, modify or delete it. Only transaction has such capability.
 
 <hr>
   
 #### QUESTION 5: 
 Explain why I couldn't save something to your account.
 #### ANSWER: 
-
+You can't save something to my own account because you are not a coder (lol - just joking). Its because you need AuthAccount access to my account first, which requires I sign a transaction. Since you don't have my private key and have not sign transaction for you, there is no way to save in my account.
 
 <hr>
 
