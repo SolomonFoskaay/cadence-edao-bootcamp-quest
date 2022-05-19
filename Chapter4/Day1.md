@@ -4,7 +4,49 @@
 
 
 #### QUESTION 1: 
-Define your own contract that stores a dictionary of resources. Add a function to get a reference to one of the resources in the dictionary.
+Explain what lives inside of an account.
+#### ANSWER: 
+
+
+ <hr>
+  
+#### QUESTION 2: 
+What is the difference between the /storage/, /public/, and /private/ paths?
+#### ANSWER:
+
+
+
+<hr>
+  
+#### QUESTION 3: 
+What does .save() do? What does .load() do? What does .borrow() do?
+#### ANSWER: 
+
+
+
+<hr>
+  
+#### QUESTION 4: 
+Explain why we couldn't save something to our account storage inside of a script.
+#### ANSWER: 
+
+
+<hr>
+  
+#### QUESTION 5: 
+Explain why I couldn't save something to your account.
+#### ANSWER: 
+
+
+<hr>
+
+
+#### QUESTION 6: 
+Define a contract that returns a resource that has at least 1 field in it. Then, write 2 transactions:
+
+    i. A transaction that first saves the resource to account storage, then loads it out of account storage, logs a field inside the resource, and destroys it.
+
+    ii. A transaction that first saves the resource to account storage, then borrows a reference to it, and logs a field inside the resource.
 #### ANSWER: 
 <img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day3-Quests-1-ReferenceDictionaryOfResource.png" width="75%" height="75%">
 
@@ -42,29 +84,5 @@ pub contract Test {
 }
 ```
 
- <hr>
-  
-#### QUESTION 2: 
-Create a script that reads information from that resource using the reference from the function you defined in part 1.
-#### ANSWER:
-<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day3-Quests-2-ScriptForReferenceDictionaryOfResource.png" width="75%" height="75%">
 
-```cadence
-import Test from 0x03
-
-pub fun main(): String {
-    let ref = Test.getRef(key: "Puppy")
-    return ref.petType
-
-}
-```
-
-<hr>
-  
-#### QUESTION 3: 
-Explain, in your own words, why references can be useful in Cadence.
-#### ANSWER: 
-Reference can be useful in Cadence because it allows to easily access and interact with data like resource without moving the actual data around. Just like having an ATM card linked to huge amount of money in your bank account, you can easily move around and spend/withdraw your money anytime without the risk of carrying the actual huge amount of money as cash in your bag/wallet all around (thats too risky -lol)
-
-  
 
