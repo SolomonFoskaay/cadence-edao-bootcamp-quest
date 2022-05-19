@@ -58,13 +58,16 @@ Define a contract that returns a resource that has at least 1 field in it. Then,
    ii. A transaction that first saves the resource to account storage, then borrows a reference to it, and logs a field inside the resource.
 #### ANSWER: 
 A. Define a contract that returns a resource that has at least 1 field in it done below:
-<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day3-Quests-1-ReferenceDictionaryOfResource.png" width="75%" height="75%">
+
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter4-Day1-Quests-6a-ContractAccountStorage.png" width="75%" height="75%">
 
 Then, write 2 transactions:
 
+
 B. A transaction that first saves the resource to account storage, then loads it out of account storage, logs a field inside the resource, and destroys it. 
 DONE BELOW:
-<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day3-Quests-1-ReferenceDictionaryOfResource.png" width="75%" height="75%">
+
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter4-Day1-Quests-6b-Transaction1AccountStorage.png" width="75%" height="75%">
 
 ```cadence
 pub contract Test {
@@ -100,9 +103,11 @@ pub contract Test {
 }
 ```
 
+
 C. A transaction that first saves the resource to account storage, then borrows a reference to it, and logs a field inside the resource.
 DONE BELOW:
-<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter3-Day3-Quests-1-ReferenceDictionaryOfResource.png" width="75%" height="75%">
+
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter4-Day1-Quests-6c-Transaction2AccountStorage.png" width="75%" height="75%">
 
 ```cadence
 pub contract Test {
