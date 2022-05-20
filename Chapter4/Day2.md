@@ -30,17 +30,22 @@ Deploy a contract that contains a resource that implements a resource interface.
 
   iii. Run the script and access something you CAN read from. Return it from the script.
 #### ANSWER: 
-A. Define a contract that returns a resource that has at least 1 field in it done below:
+A. Deploy a contract that contains a resource that implements a resource interface. DONE BELOW:
 
-<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter4-Day1-Quests-6a-ContractAccountStorage.png" width="75%" height="75%">
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter4-Day2-Quests-3a-ContractCapabilities.png" width="75%" height="75%">
 
 ```cadence
 pub contract PetCenter {
 
     //SolomonFoskaayQuestsSubmission
 
+    //resource interface
+    pub resource interface IPet {
+        pub let petType: String
+    }
+
     //resource type @Pet
-    pub resource Pet {
+    pub resource Pet: IPet {
         pub let petType: String
         pub let petName: String
 
@@ -63,13 +68,13 @@ pub contract PetCenter {
 ```
 
 
-Then, write 2 transactions:
+Then,:
 
 
-B. A transaction that first saves the resource to account storage, then loads it out of account storage, logs a field inside the resource, and destroys it. 
+B. In a transaction, save the resource to storage and link it to the public with the restrictive interface. 
 DONE BELOW:
 
-<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter4-Day1-Quests-6b-Transaction1AccountStorage.png" width="75%" height="75%">
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter4-Day2-Quests-3b-TransactionCapabilities.png" width="75%" height="75%">
 
 ```cadence
 import PetCenter from 0x02
@@ -77,60 +82,55 @@ import PetCenter from 0x02
 transaction() {
 
   prepare(acct: AuthAccount) {
-    let addPet <- PetCenter.createPet()
-
-    //STEP1of4: saves the resource to account storage
-    acct.save(<- addPet, to: /storage/TestPet) 
-
-    //STEP2of4: loads it out of account storage
-    let removePet <- acct.load<@PetCenter.Pet>(from: /storage/TestPet)
-                    ?? panic("A @PetCenter.Pet Resources Does Not Exist Here!!!")
     
-    //STEP3of4: logs a field inside the resource
-    log (removePet.petType) 
+    //SolomonFoskaayQuestsSubmission
+    //STEP1of2: save the resource to account storage
+    acct.save(<- PetCenter.createPet(), to: /storage/TestPet) 
 
-    //STEP4of4: destroys the removed resource
-    destroy removePet 
+    //STEP2of2: link it to the public with the restrictive interface
+acct.link<&PetCenter.Pet{PetCenter.IPet}>(/public/TestPetPublic, target: /storage/TestPet)
+    
   }
 
   execute {
-
+    log("Stored Pet Resource & Linked Part Of It To Public")
   }
 }
 ```
 
 ,
 
-C. A transaction that first saves the resource to account storage, then borrows a reference to it, and logs a field inside the resource.
+C. Run a script that tries to access a non-exposed field in the resource interface, and see the error pop up..
+DONE BELOW:
+
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter4-Day2-Quests-3c-Script1ErrorCapabilities.png" width="75%" height="75%">
+
+```cadence
+import PetCenter from 0x02
+
+pub fun main(address: Address): String {
+    
+    //SolomonFoskaayQuestsSubmission
+    let publicCapability: Capability<&PetCenter.Pet{PetCenter.IPet}> =
+    getAccount(address).getCapability<&PetCenter.Pet{PetCenter.IPet}>(/public/TestPetPublic)
+
+    let testPet: &PetCenter.Pet{PetCenter.IPet} = publicCapability.borrow() 
+    ?? panic("The capability doesn't exist or you did not specify the right type when you got the capability.")
+
+    return testPet.petName
+}
+```
+
+
+,
+
+D. Run the script and access something you CAN read from. Return it from the script.
 DONE BELOW:
 
 <img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter4-Day1-Quests-6c-Transaction2AccountStorage.png" width="75%" height="75%">
 
 ```cadence
-import PetCenter from 0x02
 
-transaction() {
-
-  prepare(acct: AuthAccount) {
-    let addPet <- PetCenter.createPet()
-    //SolomonFoskaayQuestsSubmission
-    //STEP1of4: saves the resource to account storage
-    acct.save(<- addPet, to: /storage/TestPet) 
-
-    //STEP2of4: then borrows a reference to it
-    let borrowPet = acct.borrow<&PetCenter.Pet>(from: /storage/TestPet)
-                    ?? panic("A @PetCenter.Pet Resources Does Not Exist Here!!!")
-    
-    //STEP3of4: logs a field inside the resource
-    log (borrowPet.petType) 
-
-    //STEP4of4: i tried to destroy the borrowed resource reference
-    //destroy borrowPet //got ERROR - cannot destroy value: not a resources
-  }
-
-  execute {
-
-  }
-}
 ```
+
 
