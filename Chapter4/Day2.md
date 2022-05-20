@@ -117,7 +117,7 @@ pub fun main(address: Address): String {
     let testPet: &PetCenter.Pet{PetCenter.IPet} = publicCapability.borrow() 
     ?? panic("The capability doesn't exist or you did not specify the right type when you got the capability.")
 
-    return testPet.petName
+    return testPet.petName //ERROR: Member of restricted type not accessible: petName
 }
 ```
 
@@ -127,10 +127,23 @@ pub fun main(address: Address): String {
 D. Run the script and access something you CAN read from. Return it from the script.
 DONE BELOW:
 
-<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter4-Day1-Quests-6c-Transaction2AccountStorage.png" width="75%" height="75%">
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter4-Day2-Quests-3d-Script2FixedErrorCapabilities.png" width="75%" height="75%">
 
 ```cadence
+import PetCenter from 0x02
 
+pub fun main(address: Address): String {
+    
+    //SolomonFoskaayQuestsSubmission
+    let publicCapability: Capability<&PetCenter.Pet{PetCenter.IPet}> =
+    getAccount(address).getCapability<&PetCenter.Pet{PetCenter.IPet}>(/public/TestPetPublic)
+
+    let testPet: &PetCenter.Pet{PetCenter.IPet} = publicCapability.borrow() 
+    ?? panic("The capability doesn't exist or you did not specify the right type when you got the capability.")
+
+    //and access something you CAN read from. Return it from the script
+    return testPet.petType //Fixed The ERROR: Member of restricted type not accessible: petName
+}
 ```
 
 
