@@ -6,19 +6,16 @@
 #### QUESTION 1: 
 What does .link() do?
 #### ANSWER: 
-
+.link() helps to make data in /storage/ path available to anyone as a /public/ path. Simply makes what we have stored, accessible for others to access. It also, gives allows to limit what is been exposed to the public via interface restrictions.
 
  <hr>
   
 #### QUESTION 2: 
 In your own words (no code), explain how we can use resource interfaces to only expose certain things to the /public/ path.
 #### ANSWER:
-The difference between the /storage/, /public/, and /private/ paths are:
- i. /storage/: stores data and only accessible to the account owner
- 
- ii. /public/: data store in this path is accessible to everyone
- 
- iii. /private/: data store in private path is accessible only to the account owner and any other people the account owner give the access to.
+In summary, to use resource interfaces to only expose certain things to the /public/ path, we simply need to ensure only things we are confortable exposing are included in the resource interface while others things remain concealed in the interfaced resource itself. 
+
+So, when the capability is given via the resource interface, it helps to limit and only expose certain things within it to the /public/ path while protecting other concealed things in the actual resources itself from the /public/ path access.
 
 
 <hr>
