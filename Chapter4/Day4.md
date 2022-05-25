@@ -43,6 +43,10 @@ pub contract CryptoPoops {
     pub fun borrowNFT(id: UInt64): &NFT
   }
 
+/*
+This is an NFT collection resources containing deposit, withdraw, getid and borrow NFT
+functions with trackable id (dictionary) mapping each ID to its actual NFT in the collection
+*/
   pub resource Collection: CollectionPublic {
     pub var ownedNFTs: @{UInt64: NFT}
 
@@ -73,10 +77,12 @@ pub contract CryptoPoops {
     }
   }
 
+//This is a function to create a new collection
   pub fun createEmptyCollection(): @Collection {
     return <- create Collection()
   }
 
+//This is a resource which ensures only role with the @Minter access is allowed to mint NFT 
   pub resource Minter {
 
     pub fun createNFT(name: String, favouriteFood: String, luckyNumber: Int): @NFT {
@@ -89,6 +95,10 @@ pub contract CryptoPoops {
 
   }
 
+/*
+This initialize the NFT total supply and also save the @Minter resource role in storage
+which ensures only the deployer of this smart contract get assigned the @Minter role and able to mint new NFT
+*/
   init() {
     self.totalSupply = 0
     self.account.save(<- create Minter(), to: /storage/Minter)
