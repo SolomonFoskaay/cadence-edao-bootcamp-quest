@@ -10,6 +10,9 @@ Take our NFT contract so far and add comments to every single resource or functi
 #### ANSWER: 
 ```cadence
 pub contract CryptoPoops {
+
+  //SolomonFoskaayQuestsSubmission
+
   pub var totalSupply: UInt64
 
   // This is an NFT resource that contains a name,
@@ -30,7 +33,7 @@ pub contract CryptoPoops {
     }
   }
 
-  // This is a resource interface that allows us to... you get the point.
+  // This is a resource interface that allows us to control what data is exposed to the /public/ path from the /storage/ path of "CollectionPublic" resource.
   pub resource interface CollectionPublic {
     pub fun deposit(token: @NFT)
     pub fun getIDs(): [UInt64]
