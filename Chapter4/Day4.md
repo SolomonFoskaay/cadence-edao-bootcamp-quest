@@ -33,7 +33,10 @@ pub contract CryptoPoops {
     }
   }
 
-  // This is a resource interface that allows us to control what data is exposed to the /public/ path from the /storage/ path of "CollectionPublic" resource.
+  /*
+  This is a resource interface that allows us to control what data is exposed to the /public/ path 
+  from the /storage/ path of "CollectionPublic" resource.
+  */
   pub resource interface CollectionPublic {
     pub fun deposit(token: @NFT)
     pub fun getIDs(): [UInt64]
