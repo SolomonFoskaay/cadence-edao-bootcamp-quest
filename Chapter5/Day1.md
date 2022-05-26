@@ -22,6 +22,8 @@ It might be useful to client (users of the contract) because it make it easier f
 Deploy a contract with an event in it, and emit the event somewhere else in the contract indicating that it happened.
 #### ANSWER:
 
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day1-Quests-2-Event.png" width="75%" height="75%">
+
 ```cadence
 pub contract PetCenter {
 
