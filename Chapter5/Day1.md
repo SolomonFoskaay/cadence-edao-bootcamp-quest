@@ -194,7 +194,7 @@ pub contract Test {
   /*
   NOOOOOOOO it will not log the name 
   WHY?
-  because the input "Jacob" is equivalent to 5 and this does not just like Jacob
+  because the input "Jacob" is equivalent to 5 and this pre condition does not just like Jacob
   and any other names of 5 lenght like Judes, Janet, Caden - lol! 
   Try using "Solomon" and it will work because the name with 7 letters are super cool enough for this code to reject -lol!
   */
@@ -205,6 +205,8 @@ pub contract Test {
     log(name)
   }
 
+
+
   // TODO
   // Tell me whether or not this function will return a value.
   // name: 'Jacob'
@@ -212,7 +214,8 @@ pub contract Test {
   /*
   YESSSSSSS it will return a value "Jacob Tucker"
   WHY?
-  
+  Because the pre condition is true and passed which requires the input name to either be greater than zero or equal to it
+  meaning any number of character inputed becomes a valid and acceptable name
   */
   pub fun numberTwo(name: String): String {
     pre {
@@ -227,9 +230,19 @@ pub contract Test {
   pub resource TestResource {
     pub var number: Int
 
+
+
+
     // TODO
     // Tell me whether or not this function will log the updated number.
     // Also, tell me the value of `self.number` after it's run.
+   ///ANSWER
+   /*
+   YESSSSSSS it will return a value "Jacob Tucker"
+   WHY?
+   Because the post condition is true and passed which requires the input name to either be greater than zero or equal to it
+   meaning any number of character inputed becomes a valid and acceptable name
+   */
     pub fun numberThree(): Int {
       post {
         before(self.number) == result + 1
