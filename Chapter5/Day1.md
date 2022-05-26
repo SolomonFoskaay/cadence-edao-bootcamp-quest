@@ -6,7 +6,13 @@
 #### QUESTION 1: 
 Describe what an event is, and why it might be useful to a client.
 #### ANSWER: 
+A. What an event is
 
+Event is used to inform users what has happened in the Blockchain easily each time it happens.
+
+B. Why it might be useful to a client
+
+It might be useful to client (users of the contract) because it make it easier for the users to get informed what is going on with the contract and can hook up the event to their website to trigger an action or update specific information when a certain event is emited from 
 
 
 
