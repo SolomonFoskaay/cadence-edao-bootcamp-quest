@@ -227,21 +227,25 @@ pub contract Test {
     return name.concat(" Tucker")
   }
 
+
+
   pub resource TestResource {
     pub var number: Int
 
-
-
-
     // TODO
     // Tell me whether or not this function will log the updated number.
+    ///ANSWER
+   /*
+   NOOOOOOOOO it will not log the updated number
+   WHY?
+   Because the post condition is false and not passed which requires the before(self.number) "0" should be equivalent to
+   result + 1 "2". Like saying 0 == 2 = false - program panics and abort
+   */
+    
     // Also, tell me the value of `self.number` after it's run.
    ///ANSWER
    /*
-   YESSSSSSS it will return a value "Jacob Tucker"
-   WHY?
-   Because the post condition is true and passed which requires the input name to either be greater than zero or equal to it
-   meaning any number of character inputed becomes a valid and acceptable name
+   Assuming this code runs (though it won't), the value of self.number will be 0 + 1 =  1
    */
     pub fun numberThree(): Int {
       post {
