@@ -190,6 +190,14 @@ pub contract Test {
   // TODO
   // Tell me whether or not this function will log the name.
   // name: 'Jacob'
+  ///ANSWER
+  /*
+  NOOOOOOOO it will not log the name 
+  WHY?
+  because the input "Jacob" is equivalent to 5 and this does not just like Jacob
+  and any other names of 5 lenght like Judes, Janet, Caden - lol! 
+  Try using "Solomon" and it will work because the name with 7 letters are super cool enough for this code to reject -lol!
+  */
   pub fun numberOne(name: String) {
     pre {
       name.length == 5: "This name is not cool enough."
@@ -200,6 +208,12 @@ pub contract Test {
   // TODO
   // Tell me whether or not this function will return a value.
   // name: 'Jacob'
+   ///ANSWER
+  /*
+  YESSSSSSS it will return a value "Jacob Tucker"
+  WHY?
+  
+  */
   pub fun numberTwo(name: String): String {
     pre {
       name.length >= 0: "You must input a valid name."
