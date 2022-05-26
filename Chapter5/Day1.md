@@ -22,6 +22,46 @@ It might be useful to client (users of the contract) because it make it easier f
 Deploy a contract with an event in it, and emit the event somewhere else in the contract indicating that it happened.
 #### ANSWER:
 
+```cadence
+pub contract PetCenter {
+
+    //SolomonFoskaayQuestsSubmission
+
+    //create event
+    pub event NewPetAdded (petType: String, petName: String)
+
+    //resource interface
+    pub resource interface IPet {
+        pub var petType: String
+    }
+
+    //resource type @Pet
+    pub resource Pet: IPet {
+        pub var petType: String
+        pub var petName: String
+
+        init() {
+            self.petType = "Dog"
+            self.petName = "Puppy" 
+        }
+    }
+
+    //create & return @Pet resource
+    pub fun createPet(newPetType: String, newPetName: String): @Pet {
+        let petAdded <- create Pet()
+
+        //emit event details of newsly created pet to users
+        emit NewPetAdded (petType: newPetType, petName: newPetName)
+        
+        return <- petAdded   
+    }
+
+    //initialize variables
+    init() {
+    }
+
+}    
+```
 
 
 <hr>
@@ -37,7 +77,7 @@ Using the contract in step 2), add some pre conditions and post conditions to yo
 
 #### QUESTION 4: 
 For each of the functions below (numberOne, numberTwo, numberThree), follow the instructions.
-```javascript
+```cadence
 pub contract Test {
 
   // TODO
@@ -87,7 +127,7 @@ pub contract Test {
 ```
 #### ANSWER: 
 
-```javascript
+```cadence
 pub contract Test {
 
   // TODO
