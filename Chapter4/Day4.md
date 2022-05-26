@@ -50,20 +50,24 @@ functions with trackable id (dictionary) mapping each ID to its actual NFT in th
   pub resource Collection: CollectionPublic {
     pub var ownedNFTs: @{UInt64: NFT}
 
+    //deposit NFT to this collection
     pub fun deposit(token: @NFT) {
       self.ownedNFTs[token.id] <-! token
     }
 
+    //withdraw NFT from this collection
     pub fun withdraw(withdrawID: UInt64): @NFT {
       let nft <- self.ownedNFTs.remove(key: withdrawID) 
               ?? panic("This NFT does not exist in this Collection.")
       return <- nft
     }
 
+    //get NFTs by ID in this collection
     pub fun getIDs(): [UInt64] {
       return self.ownedNFTs.keys
     }
 
+    //borrow NFT used to give public access to the NFT
     pub fun borrowNFT(id: UInt64): &NFT {
       return &self.ownedNFTs[id] as &NFT
     }
@@ -72,6 +76,7 @@ functions with trackable id (dictionary) mapping each ID to its actual NFT in th
       self.ownedNFTs <- {}
     }
 
+  //nested resources in a resource needed to be destroyed - that is achieved with this function 
     destroy() {
       destroy self.ownedNFTs
     }
@@ -84,11 +89,11 @@ functions with trackable id (dictionary) mapping each ID to its actual NFT in th
 
 //This is a resource which ensures only role with the @Minter access is allowed to mint NFT 
   pub resource Minter {
-
+    //create NFT with it unique details
     pub fun createNFT(name: String, favouriteFood: String, luckyNumber: Int): @NFT {
       return <- create NFT(_name: name, _favouriteFood: favouriteFood, _luckyNumber: luckyNumber)
     }
-
+    //create minter role
     pub fun createMinter(): @Minter {
       return <- create Minter()
     }
