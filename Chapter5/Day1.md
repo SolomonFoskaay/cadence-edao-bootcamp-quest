@@ -92,7 +92,6 @@ pub contract PetCenter {
         pub var petType: String
         pub var petName: String
 
-//SolomonFoskaayQuestsSubmission
         //Post condition to ensure pet type can not be Snake 
         pub fun checkPetType(newPetType: String): String {
             post {
