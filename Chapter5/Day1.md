@@ -72,7 +72,63 @@ pub contract PetCenter {
 #### QUESTION 3: 
 Using the contract in step 2), add some pre conditions and post conditions to your contract to get used to writing them out.
 #### ANSWER: 
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day1-Quests-3-PrePostCondition.png" width="75%" height="75%">
 
+```cadence
+pub contract PetCenter {
+
+    //SolomonFoskaayQuestsSubmission
+
+    //create event
+    pub event NewPetAdded (petType: String, petName: String)
+
+    //resource interface
+    pub resource interface IPet {
+        pub var petType: String
+    }
+
+    //resource type @Pet
+    pub resource Pet: IPet {
+        pub var petType: String
+        pub var petName: String
+
+//SolomonFoskaayQuestsSubmission
+        //Post condition to ensure pet type can not be Snake 
+        pub fun checkPetType(newPetType: String): String {
+            post {
+            result == "Snake": "This pet type not allowed in this pet center"
+            }
+            return newPetType
+        }        
+
+        init() {
+            self.petType = "Dog"
+            self.petName = "Puppy" 
+        }
+    }
+
+    //create & return @Pet resource
+    pub fun createPet(newPetType: String, newPetName: String): @Pet {
+    
+        //Pre condition to ensure pet name not less than one character
+        pre {
+            newPetName.length > 1: "This pet name is too short."
+        }
+
+        let petAdded <- create Pet()
+
+        //emit event details of newsly created pet to users
+        emit NewPetAdded (petType: newPetType, petName: newPetName)
+
+        return <- petAdded   
+    }
+
+    //initialize variables
+    init() {
+    }
+
+}     
+```
 
 <hr>
 
