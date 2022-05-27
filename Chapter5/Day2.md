@@ -34,10 +34,6 @@ pub contract FavouriteFood {
       self.favFood1 = "Semo"
       self.favFood2 = "Egusi Soup"
     }
-    
-    pub function myFavouriteFood() {
-        log(favFood1.concat favFood2)
-    }
 
 }    
 ```
