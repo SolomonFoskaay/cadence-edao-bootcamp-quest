@@ -19,8 +19,6 @@ That is not good enough for the Flow ecosystem.
 What is YOUR favourite food?
 #### ANSWER:
 
-<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day1-Quests-2-Event.png" width="75%" height="75%">
-
 ```cadence
 pub contract FavouriteFood {
 
@@ -33,12 +31,20 @@ pub contract FavouriteFood {
     
     //initialize variables
     init() {
-      self.favFood1 = "Eba"
+      self.favFood1 = "Semo"
       self.favFood2 = "Egusi Soup"
+    }
+    
+    pub function myFavouriteFood() {
+        log(favFood1.concat favFood2)
     }
 
 }    
 ```
+
+Script Output:
+
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day2-Quests-2-Semo-and-Egusi-Soup-Images.jpg" width="75%" height="75%">
 
 
 <hr>
