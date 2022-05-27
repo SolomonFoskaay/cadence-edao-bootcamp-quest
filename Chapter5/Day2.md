@@ -119,9 +119,14 @@ pub contract interface ITest {
     }
   }
 
-  pub resource interface IStuff {
-    pub var favouriteActivity: String
-  }
+ ///Wrong - no need to have this here since the contact interface is not forcing the resource to use this resource interface at all
+ /// same already exist in the main contract resource and forced to use its own resource interface there. This become redundact and not needed.
+ ///assuming the resource interface was forced to be implemented in this contract interface, then we would remove it from the main contract
+ ///instead of here
+ ///so, i simply commented this out meaning removed
+  // pub resource interface IStuff {
+  //  pub var favouriteActivity: String
+  // }
 
   pub resource Stuff {
     pub var favouriteActivity: String
@@ -136,7 +141,11 @@ pub contract Test {
   pub var number: Int
   
   pub fun updateNumber(newNumber: Int) {
-    self.number = 5
+    ///wrong and won't work due to post condition in interface with cause it to fail
+    //self.number = 5
+    
+    ///solution - this ensures the new number updates self.number and pass the post condition
+    self.number = newNumber 
   }
 
   pub resource interface IStuff {
