@@ -17,9 +17,7 @@ It downcast the recieved/deposited NFT to ensure it confirm only to the specific
 #### QUESTION 2: 
 What does auth do? When do we use it?
 #### ANSWER:
-auth is authorised reference
-
-It is used in replacement of force cast "as!" when dealing with a reference "&" to downcast data referenced from generic type to a specific type needed
+auth is authorised reference used when dealing with a reference to make it possible to downcast data referenced from generic type to a specific type when used with "as!"
 
 <hr>
 
