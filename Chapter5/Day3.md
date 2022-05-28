@@ -120,6 +120,7 @@ A. The NonFungibleToken standard Smart Contract DONE below:
 
 <img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day3-Quests-3a-NonFungibleTokenContract.png" width="75%" height="75%">
 
+<br/> 
 
 B. The CryptoPoops NFT Smart Contract DONE below:
 
@@ -272,9 +273,11 @@ transaction() {
 D. The DepositNFT Transaction used to mint and deposit NFTs to the Collection DONE below:
 
 Minted NFT ID = 0
+
 <img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day3-Quests-3d1-DepositNFTTransaction.png" width="75%" height="75%">
 
 Minted NFT ID = 1
+
 <img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day3-Quests-3d1-DepositNFTTransaction.png" width="75%" height="75%">
 
 ```cadence
