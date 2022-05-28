@@ -6,7 +6,10 @@
 #### QUESTION 1: 
 What does "force casting" with as! do? Why is it useful in our Collection?
 #### ANSWER: 
+Forcasting with as! is used to downcast data.
 
+It is useful in our Collection because it ensures and protect our Collection from been dilluted with other NFTs from other NFT collections. 
+It downcast the recieved/deposited NFT to ensure it confirm only to the specific NFT type our collection was created for. And if its from another NFT collection, it panic and abort the deposite to our Collection.
 
 
  <hr>
