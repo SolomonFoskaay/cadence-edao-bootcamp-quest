@@ -114,4 +114,52 @@ You will have to write all the transactions to set up the accounts, mint the NFT
   
 #### ANSWER:
 
+The answer is subdivided into:
+
+A. The NonFungibleToken standard Smart Contract DONE below:
+
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day3-Quests-3a-NonFungibleTokenContract.png" width="75%" height="75%">
+
+
+B. The CryptoPoops NFT Smart Contract DONE below:
+
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day3-Quests-3b-CryptoPoopsNFTContract.png" width="75%" height="75%">
+
+```cadence
+ 
+```
+
+
+C. The CreateNFTCollection Transaction used to create CryptoPoops Collection DONE below:
+
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day3-Quests-3c-CreateNFTCollectionTransaction.png" width="75%" height="75%">
+
+```cadence
+ 
+```
+
+
+D. The DepositNFT Transaction used to mint and deposit NFTs to the Collection DONE below:
+
+Minted NFT ID = 0
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day3-Quests-3d1-DepositNFTTransaction.png" width="75%" height="75%">
+
+Minted NFT ID = 1
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day3-Quests-3d1-DepositNFTTransaction.png" width="75%" height="75%">
+
+```cadence
+ 
+```
+
+
+E. The CheckNFT Script used to display the NFTs metadata for a certain id DONE below:
+
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day2-Quests-2-Semo-and-Egusi-Soup-Images.jpg" width="75%" height="75%">
+
+```cadence
+ 
+```
+
+
+
 
