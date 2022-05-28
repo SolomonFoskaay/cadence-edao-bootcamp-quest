@@ -121,6 +121,7 @@ A. The NonFungibleToken standard Smart Contract DONE below:
 <img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day3-Quests-3a-NonFungibleTokenContract.png" width="75%" height="75%">
 
 <br/> 
+
 <br/> 
 
 B. The CryptoPoops NFT Smart Contract DONE below:
@@ -243,6 +244,8 @@ pub contract CryptoPoops: NonFungibleToken {
 
 <br/> 
 
+<br/> 
+
 C. The CreateNFTCollection Transaction used to create CryptoPoops Collection DONE below:
 
 <img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day3-Quests-3c-CreateNFTCollectionTransaction.png" width="75%" height="75%">
@@ -270,6 +273,8 @@ transaction() {
 
 } 
 ```
+
+<br/> 
 
 <br/> 
 
@@ -311,6 +316,8 @@ transaction(recipient: Address, newName: String, newFavouriteFood: String, newLu
 
 } 
 ```
+
+<br/> 
 
 <br/> 
 
