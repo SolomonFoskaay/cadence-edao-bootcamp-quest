@@ -240,6 +240,7 @@ pub contract CryptoPoops: NonFungibleToken {
 } 
 ```
 
+<br/> 
 
 C. The CreateNFTCollection Transaction used to create CryptoPoops Collection DONE below:
 
@@ -269,6 +270,7 @@ transaction() {
 } 
 ```
 
+<br/> 
 
 D. The DepositNFT Transaction used to mint and deposit NFTs to the Collection DONE below:
 
@@ -309,6 +311,7 @@ transaction(recipient: Address, newName: String, newFavouriteFood: String, newLu
 } 
 ```
 
+<br/> 
 
 E. The CheckNFT Script used to display the NFTs metadata for a certain id DONE below:
 
