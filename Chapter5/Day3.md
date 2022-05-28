@@ -239,7 +239,7 @@ pub contract CryptoPoops: NonFungibleToken {
     emit ContractInitialized()
     self.account.save(<- create Minter(), to: /storage/Minter)
   }
-} 
+}
 ```
 
 <br/> 
@@ -271,7 +271,7 @@ transaction() {
         log("We SUCCESSFULLY Stored a Collection for our CryptoPoops")
     }
 
-} 
+}
 ```
 
 <br/> 
@@ -280,11 +280,7 @@ transaction() {
 
 D. The DepositNFT Transaction used to mint and deposit NFTs to the Collection DONE below:
 
-Minted NFT ID = 0
-
-<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day3-Quests-3d1-DepositNFTTransaction.png" width="75%" height="75%">
-
-Minted NFT ID = 1
+Minted NFT
 
 <img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day3-Quests-3d1-DepositNFTTransaction.png" width="75%" height="75%">
 
@@ -304,7 +300,7 @@ transaction(recipient: Address, newName: String, newFavouriteFood: String, newLu
        let nftMinter = account.borrow<&CryptoPoops.Minter>(from: /storage/Minter)!
 
        let publicReference = getAccount(recipient).getCapability(/public/Collection)
-                            .borrow<&CryptoPoops.Collection{NonFungibleToken.CollectionPublic}>()                                
+                            .borrow<&CryptoPoops.Collection{CryptoPoops.ICollectionPublic}>()                                
                             ?? panic("This account does not have a Collection Yet")
 
         publicReference.deposit(token: <- nftMinter.createNFT(name: newName, favouriteFood: newFavouriteFood, luckyNumber: newLuckyNumber))
@@ -312,9 +308,9 @@ transaction(recipient: Address, newName: String, newFavouriteFood: String, newLu
 
     execute {
         log("We SUCCESSFULLY Stored newly minted NFT in our CryptoPoops Collection")
-    }
+    } 
 
-} 
+}
 ```
 
 <br/> 
@@ -323,10 +319,10 @@ transaction(recipient: Address, newName: String, newFavouriteFood: String, newLu
 
 E. The CheckNFT Script used to display the NFTs metadata for a certain id DONE below:
 
-<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day2-Quests-2-Semo-and-Egusi-Soup-Images.jpg" width="75%" height="75%">
+<img src="https://github.com/SolomonFoskaay/cadence-edao-bootcamp-quest/blob/main/screenshots/EmeraldDAO-Cadence-Chapter5-Day3-Quests-3e-CheckNFTMetadataScript.png" width="75%" height="75%">
 
 ```cadence
- import CryptoPoops from 0x01
+import CryptoPoops from 0x01
 import NonFungibleToken from 0x02
 
 pub fun main(account: Address, id: UInt64): String {   
@@ -341,10 +337,10 @@ pub fun main(account: Address, id: UInt64): String {
                             .borrow<&CryptoPoops.Collection{CryptoPoops.ICollectionPublic}>()
                             ?? panic("This account does not have a CryptoPoops Collection")
 
-    return publicReference.borrowAuthNFT(id: id).name                       
+    return publicReference.borrowAuthNFT(id: id).name 
 
-
-}    
+ 
+}      
 ```
 
 
